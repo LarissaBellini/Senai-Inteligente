@@ -1,0 +1,55 @@
+.container {
+    padding: 50px;
+    background: #F6F0E8;
+    min-height: 100vh;
+}
+
+.titulo {
+    font-size: 48px;
+    color: #004b85;
+}
+
+.subtitulo {
+    margin-top: 20px;
+    width: 650px;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.botao {
+    margin-top: 35px;
+    background: #004b85;
+    border: none;
+    height: 50px;
+    width: 220px;
+    font-size: 18px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.cardTitulo {
+    color: #004b85;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cardTexto {
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}

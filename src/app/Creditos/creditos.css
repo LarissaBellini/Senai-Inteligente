@@ -1,0 +1,197 @@
+.creditos {
+  width: 1fr;
+  min-height: 1fr;
+  background: #f7f0e6;
+}
+
+.creditosCabecalho {
+  margin-bottom: 28px;
+}
+
+.creditosCabecalho h1 {
+  margin: 0;
+  color: #075889;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.creditosCabecalho p {
+  margin: 8px 0 0;
+  color: #777;
+  font-size: 15px;
+}
+
+.sobreProjeto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+  margin-bottom: 38px;
+  background: #eee2d1;
+  border: 1px solid rgba(120, 100, 80, 0.08);
+  border-radius: 14px;
+}
+
+.sobreProjetoIcone {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e2d2b9;
+  color: #075889;
+  font-size: 23px;
+}
+
+.sobreProjeto h2 {
+  margin: 0 0 7px;
+  color: #075889;
+  font-size: 19px;
+}
+
+.sobreProjeto p {
+  max-width: 900px;
+  margin: 0;
+  color: #686868;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.secaoCreditos {
+  margin-bottom: 42px;
+}
+
+.tituloSecao {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tituloIcone {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eee4d5;
+  color: #075889;
+  font-size: 19px;
+}
+
+.tituloSecao h2 {
+  margin: 0;
+  color: #075889;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.tituloSecao p {
+  margin: 4px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.cardsCreditos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.cardCredito {
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 20px;
+  background: #fbf8f3;
+  border: 1px solid #e3dcd2;
+  border-radius: 12px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cardCredito:hover {
+  transform: translateY(-2px);
+  border-color: #cfc3b4;
+  box-shadow: 0 5px 18px rgba(60, 50, 40, 0.08);
+}
+
+.avatarCredito {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e9dfd0;
+  color: #075889;
+  font-size: 20px;
+}
+
+.informacoesCredito {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.informacoesCredito h3 {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.informacoesCredito span {
+  color: #888;
+  font-size: 12px;
+}
+
+.rodapeCreditos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-top: 15px;
+  border-top: 1px solid #ded5c9;
+  color: #999;
+
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .creditos {
+    padding: 30px;
+  }
+
+  .cardsCreditos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .creditos {
+    padding: 25px 20px;
+  }
+
+  .sobreProjeto {
+    align-items: flex-start;
+  }
+
+  .cardsCreditos {
+    grid-template-columns: 1fr;
+  }
+
+  .rodapeCreditos {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+}
